@@ -5,14 +5,30 @@
     list-style: none;
   }
 
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #d1cfcf;
+    border-radius: 5px;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: aqua; 
+}
+
+
   body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #232323;
     color: #CDCDCD;
-    overflow-x: hidden;
+    
+    
   }
 
 .container{
+  width: 100%;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -118,9 +134,11 @@ header{
 }
 
 .bordatb{
-  background-color: #CDCDCD; 
+  background-color: #CDCDCD;  
+  overflow: hidden;
+  width: 100vw;
+  height: auto;
   margin: 50px 0px;
-  padding: 20px 0px;  
 }
 .container-ltr{
   color: #232323;
@@ -132,14 +150,11 @@ header{
   width: 100%;
   height: 100%;
   white-space: nowrap;
-  animation: scrollLtr 20s linear infinite;  
-}
-.container-ltr span{ 
-  margin: 0px 40px; 
-  font-size: xx-large;
+  animation: scrollLtr 20s linear infinite;
+  
 }
 .container-ltr span img{
-  margin: 0 45px;
+  margin-left: 100px;
   width: 80px;
 }
 @keyframes scrollLtr {
@@ -149,7 +164,10 @@ header{
   to {
     transform: translateX(-100%);
   }
-}
+} 
+
+
+
 .sobre{
   font-size: xx-large;
   padding-bottom: 50px;
@@ -203,6 +221,11 @@ header{
 }
 .ft img{
   width: 80px;
+ 
+}
+.ft img:hover{
+  border: 3px solid aqua;
+  border-radius: 50%;
 }
 .ft2{
   background-color: #CDCDCD;
@@ -218,6 +241,11 @@ header{
 
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
   .box{
   display: flex;
   flex-direction: column-reverse;
@@ -247,6 +275,18 @@ header{
 .ft img{
   width: 40px;
 }
+.container-ltr{
+padding: 0;  
+}
+.container-ltr span img{
+  margin-left: 50px;
+  width: 40px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 }
 .fade-in-topo {
   position: relative;
@@ -307,11 +347,3 @@ transition: transform 0.3s ease;
 .zoom-img:hover {
 transform: scale(1.03);
 }
-
-
-
-
-
-
-
-
