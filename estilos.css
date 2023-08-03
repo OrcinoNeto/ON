@@ -112,11 +112,11 @@ header{
 .imgon{
   margin-top: 50px;
   width: 400px;
-  border: 5px solid #CDCDCD;
+  border-bottom: 5px solid #CDCDCD;
   border-radius: 500px; 
 }
 .imgon:hover{
-  border: 5px solid aqua;
+  border-bottom: 5px solid aqua;
   }
 .box1{
   display: flex;
