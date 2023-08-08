@@ -22,4 +22,24 @@ document.addEventListener('DOMContentLoaded', onScroll);
 document.addEventListener('scroll', onScroll);
 
 
+function carregar() {
+  setTimeout(function() {
+      var mostrarDiv = document.querySelector(".mostrar");
+      var elementosEsconder = document.querySelectorAll(".esconder");
+
+      mostrarDiv.style.display = "none";
+      elementosEsconder.forEach(function(elemento) {
+          elemento.style.display = "grid";
+      });
+
+      // Restaurar o comportamento de rolagem após o efeito
+      document.body.style.overflow = "auto";
+  }, 5000);
+}
+
+// Adicionar evento de carga à página
+window.addEventListener("load", carregar);
+
+
+
 
