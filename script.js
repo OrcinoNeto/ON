@@ -34,7 +34,7 @@ function carregar() {
 
       // Restaurar o comportamento de rolagem após o efeito
       document.body.style.overflow = "auto";
-  }, 5000);
+  }, 2900);
 }
 
 // Adicionar evento de carga à página
