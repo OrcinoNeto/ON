@@ -361,8 +361,6 @@ width: 40px;
 
 body {
 overflow-x: hidden;
-
-
 }
 
 }
@@ -370,14 +368,28 @@ overflow-x: hidden;
 position: relative;
 overflow: hidden;
 opacity: 0;
-transform: translateY(-50px);
-transition: opacity 6s, transform 6s;
+transform: translateY(-200px);
+transition: opacity 15s, transform 15s;
 }
 .fade-in-topo.fade-in {
 opacity: 1;
 transform: translateX(0); 
 }
 
+.tptopo{
+  
+  animation-name: tptop;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+@keyframes tptop{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
 .fade-in-botton {
 position: relative;
@@ -455,7 +467,7 @@ transform: scale(1.03);
   position: relative;
   background-color: blue; 
   animation-name: updwtp1;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   z-index: 9;       
 } 
@@ -463,7 +475,7 @@ transform: scale(1.03);
   position: relative;
   background-color: red; 
   animation-name: updwtp2;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   z-index: 8;       
 } 
@@ -471,7 +483,7 @@ transform: scale(1.03);
   position: relative;
   background-color: yellow; 
   animation-name: updwtp3;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   z-index: 7;      
 } 
@@ -479,7 +491,7 @@ transform: scale(1.03);
   position: relative;
   background-color: palevioletred; 
   animation-name: updwtp4;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   z-index: 6;    
 } 
@@ -487,7 +499,7 @@ transform: scale(1.03);
   position: relative;
   background-color: green; 
   animation-name: updwtp5;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out; 
   z-index: 5;      
 } 
@@ -495,7 +507,7 @@ transform: scale(1.03);
   position: relative;
   background-color: greenyellow; 
   animation-name: updwtp6;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   z-index: 4;         
 } 
@@ -503,7 +515,7 @@ transform: scale(1.03);
   position: relative;
   background-color: brown; 
   animation-name: updwtp7;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out; 
   z-index: 3;      
 } 
@@ -511,7 +523,7 @@ transform: scale(1.03);
   position: relative;
   background-color: royalblue; 
   animation-name: updwtp8;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   z-index: 2;       
 } 
@@ -519,7 +531,7 @@ transform: scale(1.03);
   position: relative;
   background-color: antiquewhite; 
   animation-name: updwtp9;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   z-index: 1;       
 } 
